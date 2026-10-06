@@ -2,19 +2,22 @@ name: CICD
 on : push
 jobs: 
    code:
-   runs-on: ubuntu-latest
-   steps: 
-         name: code checkout
-        run: echo "code checout done"
+     runs-on: ubuntu-latest
+     steps: 
+       - name: code checkout
+         run: echo "code checout done"
    build:
-       runs on: ubuntu-latest
-       name: code build
-       run : echo "code build done"
+       runs-on: ubuntu-latest
+       steps:
+         - name: code build
+           run : echo "code build done"
    check:
-       runs on: ubuntu-latest
-       name: code check
-       run: echo "code check done"
+       runs-on: ubuntu-latest
+       steps:
+          - name: code check
+            run: echo "code check done"
    deploy:
-       runs on: ubuntu-latest
-       name: code deploy
-       run : echo "
+       runs-on: ubuntu-latest
+       steps:
+           - name: code deploy
+             run : echo "code deploy done"
