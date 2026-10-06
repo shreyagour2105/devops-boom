@@ -2,10 +2,9 @@ name: CICD
 on : push
 jobs: 
    code:
-   runs on: ubuntu-latest
+   runs-on: ubuntu-latest
    steps: 
-        runs on: ubuntu-latest
-        name: code checkout
+         name: code checkout
         run: echo "code checout done"
    build:
        runs on: ubuntu-latest
