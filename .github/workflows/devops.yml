@@ -14,7 +14,7 @@ jobs:
    check:
        runs on: ubuntu-latest
        name: code check
-       run: echo "code check done:
+       run: echo "code check done"
    deploy:
        runs on: ubuntu-latest
        name: code deploy
